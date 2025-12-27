@@ -343,7 +343,7 @@
       <div class="wrap">
         <div class="heroGrid">
           <div>
-            <div class="pill">🧭 <span>Local IT + security-minded consulting</span></div>
+            <div class="pill">🇺🇸 <span>SDVOSB — Service-Disabled Veteran-Owned Small Business</span></div>
             <h1>
               The <span class="accent">Northern Edge</span> of
               <br />reliable IT.
@@ -505,13 +505,35 @@
           helping clients strengthen their cybersecurity posture for tomorrow.
         </p>
 
+       <div class="card">
+        <div class="tag">Operational Experience</div>
+        <h3>Proven leadership in complex environments</h3>
+          <ul class="aboutPoints">
+            <li><b>Led large, distributed teams</b> in high-risk, resource-constrained environments requiring calm, decisive leadership.</li>
+            <li><b>Designed and implemented training programs</b> and SOPs that scaled across multiple locations and teams.</li>
+            <li><b>Coordinated security and planning</b> for senior government and executive-level stakeholders.</li>
+            <li><b>Collected and analyzed operational intelligence</b> to identify threats, improve situational awareness, and support mission decisions.</li>
+          </ul>
+        </div>
+
+    <div class="card">
+      <div class="tag">Performance</div>
+      <h3>Results-driven leadership</h3>
+        <ul class="aboutPoints">
+          <li><b>Led and developed high-performing teams</b> with consistent top-tier results against defined goals and metrics.</li>
+          <li><b>Recruited, trained, and retained hundreds of personnel</b>, emphasizing quality, accountability, and long-term success.</li>
+          <li><b>Achieved and exceeded organizational targets</b> through disciplined planning, execution, and follow-through.</li>
+          <li><b>Recognized for excellence in leadership and instruction</b>, including distinguished performance in senior leader development.</li>
+        </ul>    
+      </div>
+
         <div class="aboutGrid">
           <div class="card">
             <div class="tag">Background</div>
             <h3>Leadership under pressure</h3>
             <ul class="aboutPoints">
               <li><b>20+ years of military service</b> with extensive leadership experience in demanding, high-stakes environments.</li>
-              <li><b>Military Police & U.S. Army CID investigations</b> background—detail-driven, accountable, and risk-aware by design.</li>
+              <li><b>U.S. Army CID & Military Police investigations</b> background—detail-driven, accountable, and risk-aware by design.</li>
               <li><b>10+ years supporting veteran nonprofits</b>, continuing a long-term commitment to service.</li>
             </ul>
           </div>
@@ -542,14 +564,14 @@
           <div class="card">
             <h3>Reach us</h3>
             <p class="fine" style="margin-top:6px">
-              <b>Email:</b> you@yourdomain.com<br />
-              <b>Phone:</b> (555) 555‑5555<br />
-              <b>Service area:</b> Your region / Remote
+              <b>Email:</b> info@northernedgeit.com<br />
+              <b>Phone:</b> (657) 773-5360<br />
+              <b>Service area:</b> The Greater Lehigh Valley: Allentown–Bethlehem–Easton, PA / Remote
             </p>
 
             <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
               <a class="btn primary" href="mailto:you@yourdomain.com">Email us</a>
-              <a class="btn" href="tel:+15555555555">Call</a>
+              <a class="btn" href="tel:+1(657)773-5360">Call</a>
             </div>
 
             <p class="fine" style="margin-top:14px">
@@ -559,10 +581,12 @@
 
           <div class="card">
             <h3>Quick message</h3>
-            <form onsubmit="event.preventDefault(); alert('Thanks! Hook this form up to Formspree, Netlify Forms, or your backend when ready.');">
+            <form action="https://formspree.io/f/xwvkobkw" method="POST">
               <div class="contact">
-                <input name="name" placeholder="Name" autocomplete="name" />
-                <input name="email" placeholder="Email" autocomplete="email" />
+                <input name="name" placeholder="Name" autocomplete="name" required>
+                <input name="email" placeholder="Email" autocomplete="email" required>
+                <input type="hidden" name="_redirect" value="https://northernedge-it.com/thanks.html">
+                <input type="hidden" name="_subject" value="New NorthernEdge IT website inquiry">
                 <textarea name="message" placeholder="What can we help with?"></textarea>
                 <button class="btn primary" type="submit">Send</button>
               </div>
@@ -577,7 +601,7 @@
     <div class="wrap">
       <div style="display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap">
         <div class="fine">© <span id="y"></span> NorthernEdge IT. All rights reserved.</div>
-        <div class="fine">Built with your blue/green + matrix-inspired palette.</div>
+        <div class="fine"></div>
       </div>
     </div>
   </footer>
