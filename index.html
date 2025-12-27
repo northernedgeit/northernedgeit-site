@@ -88,7 +88,7 @@
       gap:12px;
       min-width: 230px;
     }
-    .brand img { height: 82px; width: auto; }
+    .brand img{height:40px; width:auto; display:block}
     .brand strong{letter-spacing:.6px}
     .brand small{display:block; color:var(--muted); font-weight:500; margin-top:2px}
 
@@ -139,17 +139,6 @@
       width: fit-content;
     }
 
-    .badge {
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:8px 12px;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.14);
-  background: rgba(255,255,255,.04);
-  color: var(--silver);
-  font-size: 13px;
-}
     h1{
       font-size: clamp(34px, 5vw, 56px);
       line-height:1.02;
@@ -303,12 +292,11 @@
       margin-top: 20px;
     }
 
-    .fine{font-size: 13px; color: rgba(255,255,255,.58
-    }
+    .fine{font-size: 13px; color: rgba(255,255,255,.58)}
 
-    .section p {margin-bottom: 1.4em;
-    }
-
+      .aboutGrid{display:grid; grid-template-columns: 1.1fr .9fr; gap:14px; margin-top:16px;}
+  .aboutPoints{margin:0; padding-left:18px; color:var(--muted); line-height:1.7;}
+  .aboutPoints li{margin: 0 0 .55em 0;}
 
     /* responsive */
     @media (max-width: 900px){
@@ -328,10 +316,10 @@
       <div class="nav">
         <a class="brand" href="#top" aria-label="NorthernEdge IT Home">
           <!-- Replace with your mountain logo file -->
-          <img src="https://raw.githubusercontent.com/northernedgeit/northernedgeit-site/refs/heads/main/assets/logo-mountain2.png" alt="NorthernEdge IT logo" />
+          <img src="assets/logo-mountain.png" alt="NorthernEdge IT logo" onerror="this.style.display='none'" />
           <div>
             <strong>NorthernEdge IT</strong>
-            <small>🇺🇸 SDVOSB  • Veteran-Owned • Security-Focused IT Services</small>
+            <small>Sharp support • Secure-by-design</small>
           </div>
         </a>
 
@@ -355,7 +343,7 @@
       <div class="wrap">
         <div class="heroGrid">
           <div>
-            <div class="pill">🇺🇸 <span>SDVOSB — Service-Disabled Veteran-Owned Small Business</span></div>
+            <div class="pill">🧭 <span>Local IT + security-minded consulting</span></div>
             <h1>
               The <span class="accent">Northern Edge</span> of
               <br />reliable IT.
@@ -374,10 +362,10 @@
           <aside class="panel logoCard" aria-label="Brand panel">
             <div class="logoRow">
               <!-- Replace with your star-only logo file (optional) -->
-              <img src="https://raw.githubusercontent.com/northernedgeit/northernedgeit-site/refs/heads/main/assets/logo-star4.png" alt="NorthernEdge compass mark" />
+              <img src="assets/logo-star.png" alt="NorthernEdge compass mark" onerror="this.style.display='none'" />
               <div>
                 <div style="font-weight:750; letter-spacing:.3px;">Fast. Clear. Professional.</div>
-                <div class="fine">Direction, Guidance, Reliability, Leadership.</div>
+                <div class="fine">A clean, modern look for cards, web, and invoices.</div>
               </div>
             </div>
 
@@ -473,75 +461,72 @@
       </div>
     </section>
 
-<section id="about" class="section">
-<div class="wrap">
-<h2>About NorthernEdge IT</h2>
-<p>
-NorthernEdge IT is built on discipline, clarity, and trust—delivering dependable IT today while
-helping clients strengthen their cybersecurity posture for tomorrow.
-</p>
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2>About NorthernEdge IT</h2>
+        <p>
+          NorthernEdge IT is built on discipline, clarity, and trust—delivering dependable IT today while
+          helping clients strengthen their cybersecurity posture for tomorrow.
+        </p>
 
-<div class="aboutGrid">
-<div class="card">
-<div class="tag">Background</div>
-<h3>Leadership under pressure</h3>
-<ul class="aboutPoints">
-<li><b>20+ years of military service</b> with extensive leadership experience in demanding, high-stakes environments.</li>
-<li><b>Military Police & U.S. Army CID investigations</b> background—detail-driven, accountable, and risk-aware by design.</li>
-<li><b>10+ years supporting veteran nonprofits</b>, continuing a long-term commitment to service.</li>
-</ul>
-</div>
+        <div class="aboutGrid">
+          <div class="card">
+            <div class="tag">Background</div>
+            <h3>Leadership under pressure</h3>
+            <ul class="aboutPoints">
+              <li><b>20+ years of military service</b> with extensive leadership experience in demanding, high-stakes environments.</li>
+              <li><b>Military Police & U.S. Army CID investigations</b> background—detail-driven, accountable, and risk-aware by design.</li>
+              <li><b>10+ years supporting veteran nonprofits</b>, continuing a long-term commitment to service.</li>
+            </ul>
+          </div>
 
-<div class="card">
-<div class="tag">Credentials</div>
-<h3>Technical + business-minded</h3>
-<ul class="aboutPoints">
-<li><b>MBA</b> (Business Analytics concentration) + <b>B.S. Information Systems</b>.</li>
-<li><b>CompTIA A+</b> and <b>Security+</b> certified.</li>
-<li><b>Lean Six Sigma Green Belt</b>—process improvement and measurable outcomes.</li>
-</ul>
-</div>
-</div>
+          <div class="card">
+            <div class="tag">Credentials</div>
+            <h3>Technical + business-minded</h3>
+            <ul class="aboutPoints">
+              <li><b>MBA</b> (Business Analytics concentration) + <b>B.S. Information Systems</b>.</li>
+              <li><b>CompTIA A+</b> and <b>Security+</b> certified.</li>
+              <li><b>Lean Six Sigma Green Belt</b>—process improvement and measurable outcomes.</li>
+            </ul>
+          </div>
+        </div>
 
-<p class="fine" style="margin-top:14px">
-SDVOSB • Service-Disabled Veteran-Owned Small Business
-</p>
-</div>
-</section>
+        <p class="fine" style="margin-top:14px">
+          SDVOSB • Service-Disabled Veteran-Owned Small Business
+        </p>
+      </div>
+    </section>
 
     <section id="contact" class="section">
       <div class="wrap">
         <h2>Contact</h2>
-        <p></p>
+        <p>Replace the placeholders below with your real info. The form is optional.</p>
 
         <div class="split">
           <div class="card">
             <h3>Reach us</h3>
             <p class="fine" style="margin-top:6px">
-              <b>Email:</b> info@northernedgeit.com<br />
-              <b>Phone:</b> (657) 773-5360<br />
-              <b>Service area:</b> The Greater Lehigh Valley: Allentown–Bethlehem–Easton, PA / Remote
+              <b>Email:</b> you@yourdomain.com<br />
+              <b>Phone:</b> (555) 555‑5555<br />
+              <b>Service area:</b> Your region / Remote
             </p>
 
             <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
-              <button type="button" class="btn primary" onclick="location.href='mailto:you@yourdomain.com'"=> Email us
-              </button>
-              <a class="btn" href="tel:+1(657)773-5360">Call</a>
+              <a class="btn primary" href="mailto:you@yourdomain.com">Email us</a>
+              <a class="btn" href="tel:+15555555555">Call</a>
             </div>
 
             <p class="fine" style="margin-top:14px">
-              <!-- Tip: Add a QR code on your business card that links here: <b>yourdomain.com</b> -->
+              Tip: Add a QR code on your business card that links here: <b>yourdomain.com</b>
             </p>
           </div>
 
           <div class="card">
             <h3>Quick message</h3>
-            <form action="https://formspree.io/f/xwvkobkw" method="POST">
+            <form onsubmit="event.preventDefault(); alert('Thanks! Hook this form up to Formspree, Netlify Forms, or your backend when ready.');">
               <div class="contact">
-                <input name="name" placeholder="Name" autocomplete="name" required>
-                <input name="email" placeholder="Email" autocomplete="email" required>
-                <input type="hidden" name="_redirect" value="https://northernedge-it.com/thanks.html">
-                <input type="hidden" name="_subject" value="New NorthernEdge IT website inquiry">
+                <input name="name" placeholder="Name" autocomplete="name" />
+                <input name="email" placeholder="Email" autocomplete="email" />
                 <textarea name="message" placeholder="What can we help with?"></textarea>
                 <button class="btn primary" type="submit">Send</button>
               </div>
@@ -556,7 +541,7 @@ SDVOSB • Service-Disabled Veteran-Owned Small Business
     <div class="wrap">
       <div style="display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap">
         <div class="fine">© <span id="y"></span> NorthernEdge IT. All rights reserved.</div>
-        <div class="fine"></div>
+        <div class="fine">Built with your blue/green + matrix-inspired palette.</div>
       </div>
     </div>
   </footer>
