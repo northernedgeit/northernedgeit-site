@@ -493,10 +493,12 @@
 
           <div class="card">
             <h3>Quick message</h3>
-            <form onsubmit="event.preventDefault(); alert('Thanks! Hook this form up to Formspree, Netlify Forms, or your backend when ready.');">
+            <form action="https://formspree.io/f/xxxxabcd" method="POST">
               <div class="contact">
-                <input name="name" placeholder="Name" autocomplete="name" />
-                <input name="email" placeholder="Email" autocomplete="email" />
+                <input name="name" placeholder="Name" autocomplete="name" required>
+                <input name="email" placeholder="Email" autocomplete="email" required>
+                <input type="hidden" name="_redirect" value="https://northernedge-it.com/thanks.html">
+                <input type="hidden" name="_subject" value="New NorthernEdge IT website inquiry">
                 <textarea name="message" placeholder="What can we help with?"></textarea>
                 <button class="btn primary" type="submit">Send</button>
               </div>
